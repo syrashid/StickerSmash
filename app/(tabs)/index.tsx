@@ -1,12 +1,12 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function AboutScreen() {
+export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>About Screen</Text>
-      <Link href="/broken" style={styles.button}>
-        Broken Link
+      <Text style={styles.text}>StickerSmash Home Screen</Text>
+      <Link href="/about" style={styles.button}>
+        Go to About screen
       </Link>
     </View>
   );
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#25292e",
-    justifyContent: "center",
     alignItems: "center",
+    justifyContent: "center",
   },
   text: {
     color: "#fff",
